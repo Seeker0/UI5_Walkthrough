@@ -30,6 +30,15 @@ sap.ui.define(['sap/ui/base/ManagedObject'], function(ManagedObject) {
           );
 
           oView.addDependent(oDialog);
+
+          jQuery.sap.syncStyleClass(
+            oView
+              .getController()
+              .getOwnerComponent()
+              .getContentDensityClass(),
+            oView,
+            oDialog
+          );
         }
         oDialog.open();
       }
