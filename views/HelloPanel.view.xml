@@ -8,12 +8,6 @@
     width="auto" >
     <content>
       <Button
-        icon="sap-icon://world"
-        text="{i18n>openDialogButtonText}"
-        press="onOpenDialog"
-        class="sapUiSmallMarginEnd" />
-
-      <Button
         text="{i18n>showHelloButtonText}"
         press="onShowHello"
         class="myCustomButton"/>

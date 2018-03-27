@@ -16,24 +16,7 @@ sap.ui.define(['sap/ui/core/mvc/Controller', 'sap/m/MessageToast'], function(
       MessageToast.show(sMsg);
     },
     onOpenDialog: function() {
-      let oView = this.getView();
-      let oDialog = oView.byId('helloDialog');
-
-      if (!oDialog) {
-        oDialog = sap.ui.xmlfragment(
-          oView.getId(),
-          'sap.ui.demo.walkthrough.views.HelloDialog',
-          this
-        );
-        oView.addDependent(oDialog);
-      }
-
-      oDialog.open();
-    },
-    onCloseDialog: function() {
-      this.getView()
-        .byId('helloDialog')
-        .close();
+      this.getOwnerComponent().openHelloDialog();
     }
   });
 });
