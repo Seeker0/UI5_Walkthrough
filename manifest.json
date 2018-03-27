@@ -8,7 +8,8 @@
     "description": "{{appDescription}}",
     "applicationVersion": {
       "version": "1.0.0"
-    }
+    },
+    "ach": "CA-UI5-DOC"
   },
   "sap.ui": {
     "technology": "UI5",
@@ -40,7 +41,7 @@
       },
       "invoice": {
         "type": "sap.ui.model.json.JSONModel",
-        "uri": "Invoices.json"
+        "uri": "localService/mockdata/Invoices.json"
       }
     },
     "resources": {
